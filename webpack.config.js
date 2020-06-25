@@ -44,4 +44,18 @@ adminConfig.resolve.alias['sylius/bundle'] = syliusBundles;
 adminConfig.externals = Object.assign({}, adminConfig.externals, { window: 'window', document: 'document' });
 adminConfig.name = 'admin';
 
-module.exports = [shopConfig, adminConfig];
+Encore.reset();
+Encore
+  .setOutputPath('public/nsm-theme')
+  .setPublicPath('/nsm-theme')
+  .addEntry('app', './themes/NSMTheme/assets/entry.js')
+  .disableSingleRuntimeChunk()
+  .cleanupOutputBeforeBuild()
+  .enableSassLoader()
+  .enableSourceMaps(!Encore.isProduction())
+  .enableVersioning(Encore.isProduction());
+
+const bootstrapThemeConfig = Encore.getWebpackConfig();
+bootstrapThemeConfig.name = 'bootstrapTheme';
+
+module.exports = [shopConfig, adminConfig, bootstrapThemeConfig];

@@ -6,6 +6,8 @@
 /public/media/image/*
 !/public/media/image/.gitignore
 /public/build
+/public/bootstrap-theme
+/public/nsm-theme
 
 /node_modules
 
