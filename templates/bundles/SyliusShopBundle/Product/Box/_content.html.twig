@@ -1,5 +1,7 @@
 {% import "@SyliusShop/Common/Macro/money.html.twig" as money %}
 
+{% set isInventoryAvailable = nedac_inventory_is_available(product.variants) %}
+
 <div class="ui fluid card" {{ sylius_test_html_attribute('product') }}>
     <div class="blurring dimmable image">
         <div class="ui dimmer">
