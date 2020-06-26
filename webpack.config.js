@@ -46,8 +46,8 @@ adminConfig.name = 'admin';
 
 Encore.reset();
 Encore
-  .setOutputPath('public/nsm-theme')
-  .setPublicPath('/nsm-theme')
+  .setOutputPath('public/bootstrap-theme')
+  .setPublicPath('/bootstrap-theme')
   .addEntry('app', './themes/NSMTheme/assets/entry.js')
   .disableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()

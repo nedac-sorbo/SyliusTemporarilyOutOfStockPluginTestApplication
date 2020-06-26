@@ -2,4 +2,4 @@ framework:
   assets:
     packages:
       bootstrapTheme:
-        json_manifest_path: '%kernel.project_dir%/public/nsm-theme/manifest.json'
+        json_manifest_path: '%kernel.project_dir%/public/bootstrap-theme/manifest.json'
