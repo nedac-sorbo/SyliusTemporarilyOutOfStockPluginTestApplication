@@ -18,4 +18,4 @@ sylius_theme:
         filesystem:
             directories:
                 - "%kernel.project_dir%/../../vendor/sylius/bootstrap-theme"
-                - "%kernel.project_dir%/../../themes"
+                - "%kernel.project_dir%/themes"

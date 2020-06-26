@@ -1,6 +1,6 @@
 {
-  "name": "nedac/nsm-theme",
-  "description": "NSM Bootstrap based theme for Sylius 1.7",
+  "name": "nedac/bootstrap-theme",
+  "description": "Bootstrap based theme for Sylius 1.7",
   "license": "proprietary",
   "authors": [
     {
@@ -10,7 +10,7 @@
   ],
   "extra": {
     "sylius-theme": {
-      "title": "NSM theme",
+      "title": "Bootstrap theme",
       "parents": [ "sylius/bootstrap-theme" ]
     }
   }

@@ -48,7 +48,7 @@ Encore.reset();
 Encore
   .setOutputPath('public/bootstrap-theme')
   .setPublicPath('/bootstrap-theme')
-  .addEntry('app', './themes/NSMTheme/assets/entry.js')
+  .addEntry('app', './themes/BootstrapTheme/assets/entry.js')
   .disableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSassLoader()
