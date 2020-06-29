@@ -7,7 +7,7 @@
         {% include '@SyliusShop/Product/_mainImage.html.twig' with {'product': product, 'class': 'card-img-top'} %}
         {% if not isInventoryAvailable %}
         <div class="card-img-overlay" style="padding-left: 0.75rem; padding-top: 0.75rem">
-            <h5><span class="badge badge-secondary">{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</span></h5>
+            <h5><span class="badge badge-secondary" {{ sylius_test_html_attribute('product-out-of-stock') }}>{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</span></h5>
         </div>
         {% endif %}
     </a>

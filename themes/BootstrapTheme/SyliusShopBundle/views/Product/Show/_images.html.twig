@@ -16,7 +16,7 @@
 <div data-product-image="{{ path }}" data-product-link="{{ original_path }}" style="position: relative; display: inline-block">
 <a href="{{ original_path }}" class="glightbox" data-js-product-image>
     {% if not isInventoryAvailable %}
-    <h4 style="position: absolute; left: 25px; top: 15px;"><span class="badge badge-secondary">{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</span></h4>
+    <h4 style="position: absolute; left: 25px; top: 15px;"><span class="badge badge-secondary" {{ sylius_test_html_attribute('product-out-of-stock') }}>{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</span></h4>
     {% endif %}
     <img class="img-fluid" src="{{ path }}" alt="{{ product.name }}" {{ sylius_test_html_attribute('main-image') }}/>
 </a>
