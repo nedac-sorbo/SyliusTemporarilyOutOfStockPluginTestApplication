@@ -4,7 +4,7 @@
 
 <div class="ui fluid card">
     {% if not nedac_inventory_is_available(product.variants) %}
-        <a class="ui ribbon label nedac-out-of-stock-plugin-card-ribbon">{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</a>
+        <a class="ui ribbon label nedac-out-of-stock-plugin-card-ribbon" data-test-product-out-of-stock>{{ 'nedac.ui.temporarily_out_of_stock'|trans }}</a>
     {% endif %}
     <a href="{{ path('sylius_shop_product_show', {'slug': product.slug, '_locale': product.translation.locale}) }}" class="blurring dimmable image">
         <div class="ui dimmer">
