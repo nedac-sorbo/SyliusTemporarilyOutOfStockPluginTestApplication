@@ -12,3 +12,8 @@ doctrine:
         charset: UTF8
 
         url: '%env(resolve:DATABASE_URL)%'
+
+    orm:
+        dql:
+            string_functions:
+                FIRST: Nedac\SyliusTemporarilyOutOfStockPlugin\Doctrine\Dql\FirstFunction
